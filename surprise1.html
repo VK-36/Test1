@@ -535,12 +535,6 @@ html, body {
 
       </svg>
     </div>
-    <div id="wish-wrap">
-      <div class="wish-inner">
-        <div class="wish-text">Make a wish, di 🌟</div>
-        <div class="wish-sub">may every single one come true</div>
-      </div>
-    </div>
   </div>
 </div>
 
@@ -642,8 +636,6 @@ function blowCandle(id) {
 }
 
 function allBlown() {
-  const w = document.getElementById('wish-wrap');
-  w.style.display = 'block';
   setTimeout(()=>{ document.getElementById('backBtn').style.display='block'; },1200);
   for(let i=0;i<5;i++) setTimeout(burstPoppers, i*200);
 }
